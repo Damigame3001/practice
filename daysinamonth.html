@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="input">Enter a month</label>
+        <input value="" id="input"/>
+        <button onclick="daysOfTheMonth()">Enter</button>
+    </div>
+</body>
+</html>
+<script>
+    let input = document.getElementById('input')
+    let monthsWith31Days = ['january' , 'march' , 'may' , 'july' , 'august' , 'october', 'december']
+    let monthsWith29Days = ['february']
+
+
+// function daysOfTheMonth() {
+    let thisPrompt = prompt('Days Of The Month' , 'input text here')
+    let correctPrompt = thisPrompt.toLowerCase();
+    
+    switch (correctPrompt) {
+        case 'january' , 'march' , 'may' , 'july' , 'august' , 'october', 'december':
+            console.log(correctPrompt + 'has 31 days');
+            break;
+
+            case 'february':
+            console.log(correctPrompt + 'has 29 days');
+            break;
+    
+        default:
+            console.log('not valid');
+            break;
+    }
+// }
+</script>

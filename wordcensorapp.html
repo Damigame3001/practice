@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input"/>
+    <button onclick="getInputValue()">click me</button>
+    <h1 id="textt"></h1>
+</body>
+</html>
+<script>
+    let input = document.getElementById("input")
+    let textt = document.getElementById("textt")
+
+    function getInputValue() {
+    let foulword = /fuck|Bastard|Stupid|fucking|stupid/gi;
+    let censor = input.value.replace(foulword,"****") 
+    textt.innerHTML = censor
+    console.log(input.value);
+}
+</script>

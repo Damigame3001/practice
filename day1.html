@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+    <div id="hist">Hi im DAMI</div>
+    <button onclick="alert('hi everyone')">click me</button>
+    <button id="button"onclick="displayBlock()">display block
+</button>
+<p id="answer"></p>
+</body>
+</html>
+<script>
+    let myName = 8   // it can be double or single quote
+    myName = 'dami' // Reasignment changes let
+    const gravity = 9.81
+    //WRITE VARIABLES IN CAMEL CASING
+    console.log(gravity);
+    console.log(myName);
+
+let div = document.getElementById('div')
+
+div.style.backgroundColor = 'yellow'
+div.style.width = '100px'
+div.style.height = '100px'
+div.style.display = 'none'
+
+function displayBlock() {
+    div.style.display ='block'
+}
+
+// div.innerHTML = 'HEYYY'
+div.innerHTML = `<p> hey </p>`
+div.textContent += 'helo'
+
+let month = 'march'
+let day = '2nd of April'
+let a = 22
+let b = 5
+
+let total = Math.floor(a+b)
+let remainder = a % b
+console.log(total);
+console.log(remainder);
+
+let todaysdate = day + ' ' + month      // concactinate strings
+console.log(todaysdate);
+
+    //WAYS OF INTRODUVTION LET AND CONST
+
+    //assignment 
+    //read on data types
+    let hist = document.getElementById('hist')
+
+    hist.style.backgroundColor = 'red'
+    hist.style.borderRadius = '100px'
+    hist.style.borderRadius = '100px'
+    hist.style.textAlign = 'center'
+    
+    let c = 7
+    let d = 8
+
+    answer.innerHTML = c + d
+
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let student = 'David'
+    student = student.toUpperCase()
+    student = student.toLowerCase()
+    console.log(student);
+
+    let thisWord = 'javaScript'
+
+    let vid = student.substring(2,5)
+    console.log(vid);
+
+    let script = thisWord.substring(4,10)
+    console.log(script);
+
+    let string = '30 days of javascript'
+    // string = string.split()
+    // console.log(string);
+    string = string.split('')
+    console.log(string);
+
+
+    let string1 = '30+days+of+javascript'
+    string1 = string1.split('+')
+    console.log(string1);
+
+    let string2 = '       30+days+of+javascript'
+    string2.trimStart
+    console.log(string2);
+
+    console.log(string.includes('3')); // problem
+
+    let myText = 'we are enjoying javaScript so far in sqi, and i think im falling in love'
+    console.log(myText.replaceAll(' in ',' out '));
+    console.log(myText.charAt(7));
+    console.log(myText.charAt(20));
+
+    let one = 'hey'
+    let two = ' david'
+    let three = ' sup'
+    let newString = one.concat(two, three)      // you can also use '' for space
+    console.log(newString);
+
+    console.log(myText.match('are'));
+
+
+    let word = 'hello'
+    console.log(word.slice(2, 5));
+
+
+</script>

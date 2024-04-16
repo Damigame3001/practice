@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">Enter a month</label>
+        <input value="" id="input"/>
+        <button onclick="daysOfTheMonth()">Enter</button>
+</body>
+</html>
+<script>
+    
+    // let thisPrompt = prompt('who is the biggest artist' , 'input text here')
+    // switch (thisPrompt) {
+    //     case ['wizkid', 'me', 'you']:
+    //         console.log('this is wizkid');
+    //         break;
+
+    //         case 'davido':
+    //         console.log('this is davido');
+    //         break;
+            
+    //         case 'burna':
+    //         console.log('this is burna');
+    //         break;
+    
+    //     default:
+    //         console.log('you didnt get any right');
+    //         break;
+    // }
+    
+// function daysOfTheMonth() {
+    let thisPrompt = prompt('Days Of The Month', 'input text here');
+
+// Array of month names with 31 days
+let monthsWith31Days = ['january', 'march', 'may', 'july', 'august', 'october', 'december'];
+
+// Convert input to lowercase for case-insensitive comparison
+let inputLower = thisPrompt.toLowerCase();
+
+// Check if the input month is in the array
+if (monthsWith31Days.includes(inputLower)) {
+    console.log(thisPrompt + ' has 31 days');
+}
+
+</script>
